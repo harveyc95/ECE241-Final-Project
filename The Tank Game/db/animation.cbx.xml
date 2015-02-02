@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="animation">
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|CountDown:countdown|draw_and_erase_countdown:drawanderase|CountDown_1:num1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5qc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum1:num1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rng1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum5:num5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3rg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankOneLeft:Tank_1L|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6rd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|ResetP2Hearts:P2Reset|ThreeHearts:FullLife|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vhg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankOneRight:Tank_1R|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_pud1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankTwoLeft:Tank_2L|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_pnd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|CountDown:countdown|draw_and_erase_countdown:drawanderase|CountDown_2:num2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6qc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum2:num2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_jog1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum6:num6|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_dog1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawTotalRounds:drawtotalrounds|TotalRoundNum3:num3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawTotalRounds:drawtotalrounds|TotalRoundNum7:num7|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankTwoRight:Tank_2R|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_crd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|ResetP1Hearts:P1Reset|ThreeHearts:FullLife|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_vhg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|DrawPlayerWin:winner|Player1Win:player1_color|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_mig1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankOneUp:Tank_1U|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_0ld1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|CountDown:countdown|draw_and_erase_countdown:drawanderase|CountDown_3:num3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_7qc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum3:num3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum7:num7|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qug1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankTwoUp:Tank_2U|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_jhd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|vga_adapter:VGA|altsyncram:VideoMemory" CBX_FILE_NAME="altsyncram_mqg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|DrawPlayerWin:winner|Player2Win:player2_color|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_nig1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankOneDown:Tank_1D|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_jrd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawCurrentRound:CurrentRound|TotalRoundNum4:num4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_lrg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawTotalRounds:drawtotalrounds|TotalRoundNum1:num1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_rng1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|DrawTotalRounds:drawtotalrounds|TotalRoundNum5:num5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_3rg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|TankTwoDown:Tank_2D|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6od1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

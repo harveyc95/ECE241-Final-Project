@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Nov 28 10:58:44 2014
+Quartus II 64-Bit Version : 11.1 Build 259 01/25/2012 SP 2 SJ Full Version
+Revision Name : animation
+Top-level Entity Name : GameFlow
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 3,939 / 33,216 ( 12 % )
+    Total combinational functions : 3,884 / 33,216 ( 12 % )
+    Dedicated logic registers : 1,082 / 33,216 ( 3 % )
+Total registers : 1082
+Total pins : 104 / 475 ( 22 % )
+Total virtual pins : 0
+Total memory bits : 242,688 / 483,840 ( 50 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

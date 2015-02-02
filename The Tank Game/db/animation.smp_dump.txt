@@ -1,0 +1,313 @@
+
+State Machine - |GameFlow|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 
+CState.ST_Read_Inputs 0 0 1 
+CState.ST_DrawTotalRounds 0 1 0 
+CState.ST_PrepInitialScreen 0 1 1 
+CState.ST_Countdown 1 0 0 
+CState.ST_Start_Game 1 0 1 
+CState.ST_Player1Win 1 1 0 
+CState.ST_Player2Win 1 1 1 
+
+State Machine - |GameFlow|animation:gamegraphics|CState
+Name CState~6 CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 0 
+CState.ST_EraseCurrent 0 0 0 0 1 
+CState.ST_TurnOffErase 0 0 0 1 0 
+CState.ST_EraseCurrent2 0 0 0 1 1 
+CState.ST_Up 0 0 1 0 0 
+CState.ST_Down 0 0 1 0 1 
+CState.ST_Left 0 0 1 1 0 
+CState.ST_Right 0 0 1 1 1 
+CState.ST_Draw_Translated 0 1 0 0 0 
+CState.ST_TurnOffDraw 0 1 0 0 1 
+CState.ST_Draw_Translated2 0 1 0 1 0 
+CState.ST_Delay 0 1 0 1 1 
+CState.ST_Player1Bullet1 0 1 1 0 0 
+CState.ST_Player1Bullet2 0 1 1 0 1 
+CState.ST_Player1Bullet3 0 1 1 1 0 
+CState.ST_Player1Bullet4 0 1 1 1 1 
+CState.ST_Player2Bullet1 1 0 0 0 0 
+CState.ST_Player2Bullet2 1 0 0 0 1 
+CState.ST_Player2Bullet3 1 0 0 1 0 
+CState.ST_Player2Bullet4 1 0 0 1 1 
+CState.ST_ButtonBuffer 1 0 1 0 0 
+CState.ST_EraseP1Heart 1 0 1 0 1 
+CState.ST_EraseP2Heart 1 0 1 1 0 
+CState.ST_ResetPositons 1 0 1 1 1 
+CState.ST_ClearField 1 1 0 0 0 
+CState.ST_TurnOffClear 1 1 0 0 1 
+CState.ST_DrawWinner 1 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|EraseHearts:heartEraser|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|ClearField:clear|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_Done 1 0 0 
+
+State Machine - |GameFlow|animation:gamegraphics|draw_and_erase_tank:tank_animator|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B4|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B4|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B3|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B3|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B2|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B2|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B1|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P2B1|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B4|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B4|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B3|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B3|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B2|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B2|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B1|CState
+Name CState~5 CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 0 
+CState.ST_SetValues 0 0 0 1 
+CState.ST_DrawBullet 0 0 1 0 
+CState.ST_TurnOffDraw 0 0 1 1 
+CState.ST_SendDoneSignal 0 1 0 0 
+CState.ST_Delay 0 1 0 1 
+CState.ST_deIncrementBullet 0 1 1 0 
+CState.ST_EraseBullet 0 1 1 1 
+CState.ST_TurnOffErase 1 0 0 0 
+CState.ST_CollisionDetect 1 0 0 1 
+CState.ST_IncrementBullet 1 0 1 0 
+
+State Machine - |GameFlow|animation:gamegraphics|BulletMaker:P1B1|drawPLUSerase:drawneraseit|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_chooseColor 0 0 1 
+CState.ST_setMem 0 1 0 
+CState.ST_draw 0 1 1 
+CState.ST_count 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|animation:gamegraphics|DrawPlayerWin:winner|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|CountDown:countdown|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_Idle 0 0 0 
+CState.ST_Draw1 0 0 1 
+CState.ST_Draw2 0 1 0 
+CState.ST_Draw3 0 1 1 
+CState.ST_Erase3 1 0 0 
+CState.ST_SendDone 1 0 1 
+
+State Machine - |GameFlow|CountDown:countdown|draw_and_erase_countdown:drawanderase|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|DrawTotalRounds:drawtotalrounds|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|DrawCurrentRound:CurrentRound|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|ResetP2Hearts:P2Reset|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 
+
+State Machine - |GameFlow|ResetP1Hearts:P1Reset|CState
+Name CState~4 CState~3 CState~2 
+CState.ST_idle 0 0 0 
+CState.ST_setMem 0 0 1 
+CState.ST_draw 0 1 0 
+CState.ST_count 0 1 1 
+CState.ST_chooseColor 1 0 0 
+CState.ST_Done 1 0 1 

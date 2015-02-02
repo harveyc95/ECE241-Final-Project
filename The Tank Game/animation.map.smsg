@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at animation.v(405): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at GameFlow.v(182): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at DrawPlayerWin.v(44): object "Player1_Color" differs only in case from object "player1_color" in the same scope
+Info (10281): Verilog HDL Declaration information at DrawPlayerWin.v(45): object "Player2_Color" differs only in case from object "player2_color" in the same scope

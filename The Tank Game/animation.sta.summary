@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'animation:gamegraphics|Tank1Enable'
+Slack : -5.123
+TNS   : -14.715
+
+Type  : Slow Model Setup 'CLOCK_50'
+Slack : -3.493
+TNS   : -187.154
+
+Type  : Slow Model Setup 'animation:gamegraphics|EraseP1Heart'
+Slack : -1.267
+TNS   : -3.797
+
+Type  : Slow Model Setup 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 30.628
+TNS   : 0.000
+
+Type  : Slow Model Hold 'animation:gamegraphics|EraseP1Heart'
+Slack : -0.897
+TNS   : -4.323
+
+Type  : Slow Model Hold 'CLOCK_50'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Slow Model Hold 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 0.531
+TNS   : 0.000
+
+Type  : Slow Model Hold 'animation:gamegraphics|Tank1Enable'
+Slack : 1.416
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'animation:gamegraphics|EraseP1Heart'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'animation:gamegraphics|Tank1Enable'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'CLOCK_50'
+Slack : 7.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 17.873
+TNS   : 0.000
+
+Type  : Fast Model Setup 'animation:gamegraphics|Tank1Enable'
+Slack : -2.708
+TNS   : -7.827
+
+Type  : Fast Model Setup 'CLOCK_50'
+Slack : -1.214
+TNS   : -54.288
+
+Type  : Fast Model Setup 'animation:gamegraphics|EraseP1Heart'
+Slack : -0.203
+TNS   : -0.591
+
+Type  : Fast Model Setup 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 35.767
+TNS   : 0.000
+
+Type  : Fast Model Hold 'animation:gamegraphics|EraseP1Heart'
+Slack : -0.657
+TNS   : -3.254
+
+Type  : Fast Model Hold 'CLOCK_50'
+Slack : -0.358
+TNS   : -0.851
+
+Type  : Fast Model Hold 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast Model Hold 'animation:gamegraphics|Tank1Enable'
+Slack : 1.044
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'animation:gamegraphics|EraseP1Heart'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'animation:gamegraphics|Tank1Enable'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'CLOCK_50'
+Slack : 7.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'VGA|mypll|altpll_component|pll|clk[0]'
+Slack : 17.873
+TNS   : 0.000
+
+------------------------------------------------------------
